@@ -15,17 +15,6 @@
 - We will be using MOCK DATA for our content
 - You can find the data in ./mocks/data.json
 
-## Data
-
-```
-{ 
-  "id": 1,
-  "first_name": "Osmond",
-  "last_name": "Fomichkin",
-  "mobile_number": "776-71-0556"
-}
-```
-
 ## Tech Approach
 
 1. Create a route for `/api/customers/:id`
