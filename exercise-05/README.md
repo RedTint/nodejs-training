@@ -36,3 +36,6 @@
 }
 ```
 4. You should receive a response with `201 (Created)`
+5. Using your browser, navigate to http://localhost:9999/api/customers
+
+ - Verify that you've seen the data at the end of the list
