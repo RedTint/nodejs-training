@@ -22,7 +22,6 @@
   a. Note: Make sure to cast `id` to `int`
 3. Set status to `200 (OK)`
 4. Return customer
-5. Listen to `${host}:9999`
 
 ## Test Plan
 
