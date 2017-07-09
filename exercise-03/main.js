@@ -18,6 +18,7 @@ const jsonParser = bodyParser.json();
 
 // create a route for /api/customers
 app.get('/api/customers', jsonParser, (req, res) => {
+  console.log('/api/customers called');
   res.status(200); // set 200 (OK) status
   res.send(data); // send response
 });
