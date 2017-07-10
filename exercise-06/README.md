@@ -14,4 +14,6 @@ Tech Story: All configurations should be placed in a single config module. Confi
 ### UAC
 
 - Demo that a config module was created
-- Demo that specified configurations are successfully retrieved
+- Demo that there is a check for missing configurations
+- Demo that the application exits if there is a missing configuration
+- Demo that specified configuration are successfully retrieved
