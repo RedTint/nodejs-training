@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>My First socket.io App</title>
+    </head>
+    <body>
+        <script src="socket.io.js"></script>
+        <script src="jquery.min.js"></script>
+        <script>
+            // ##############################
+            //  C L I E N T
+            // ##############################
+
+            // Parameter is the socket.io server URL
+            const socket = io('http://localhost:8888');
+
+            socket.on('connect', () => {
+                console.log(`You are connected using ID ${socket.id}`);
+            });
+
+            socket.on('disconnect', () => {
+                console.log(`You were disconnected`);
+            });
+
+            socket.on('data feed', data => {
+                $('#messages').append(`${data} <br/>`);
+            });
+
+            socket.on('server response', message => {
+                $('#messages').append(`${message}<br/>`);
+            });
+
+            sendMessage = () => {
+                // get the input box's value
+                const input = document.getElementById('message');
+                const message = input.value;
+                input.value = '';
+
+                // 'client message' is the command 
+                socket.emit('client message', message); 
+            }
+        </script>
+        <input type="text" id="message" />
+        <button onclick="sendMessage()">Send Message</button> 
+         <div id="messages"></div> 
+    </body>
+</html>
