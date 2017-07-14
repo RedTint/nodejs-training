@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Socket.io Client</title>
+    </head>
+    <body>
+        <script src="/client/socket.io.js"></script>
+        <script src="/client/jquery.min.js"></script>
+        <script type="text/javascript">
+            var socket = io('http://localhost:9000');
+            var socketId = null;
+            socket.on('connect', function() {
+                socketId = socket.id;
+                console.log('connected', socketId);
+            });
+        
+            socket.on('disconnect', function() {
+                console.log('disconnected');
+            });
+
+            socket.on('record_feed', function(record) {  
+                $('#receiver').append(
+                    '<div>' + record.first_name + ' ' + record.last_name + '</div>'
+                );
+            });
+        </script>
+        <h1>My First Socket.io App</h1>
+        <div id="receiver">
+        </div>
+    </body>
+</html>
