@@ -3,10 +3,10 @@ const express = require('express');
 const socket = require('socket.io');
 const http = require('http');
 
-// Configs
+// Load configuration
 const port = process.env.NODE_PORT || 9000;
 
-// Mock data
+// Load mock data
 const data = require('./mocks/data.json');
 
 // Instantiate Express
@@ -16,32 +16,31 @@ const server = http.createServer(app);
 // Instantiate socket.io
 const io = socket(server);
 
-let clients = [];
-
+// Listen to incoming connections
 io.on('connection', client => {
-    
+    // print out the ID of the client that connected
     console.log(`Client connected: ${client.id}`);
-    clients.push(client.id);
-    console.log(`# of clients connected: ${clients.length}`);
 
+    // send random data to client every 500ms
     let $interval = setInterval(() => {
         const index = Math.floor(Math.random() * (data.length-1));
         client.emit('record_feed', data[index]);
     }, 500);
 
-    client.on('disconnect', (data, data2) => {
+    client.on('disconnect', () => {
         console.log(`Client disconnected: ${client.id}`);
-        let index = clients.indexOf(client.id);
-        clients.splice(index);
-        console.log(`# of clients connected: ${clients.length}`);
     });
 });
 
+// The next two lines lets us access the client that is
+// found inside the /client folder
 app.use('/client', express.static(`${__dirname}/client`));
 app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/client/index.html`);
 });
 
+// Listen to HTTP server and NOT express
+// This is a common mistake
 server.listen(port, () => {
     console.log(`socket.io server: listening to port ${port}`);
 });

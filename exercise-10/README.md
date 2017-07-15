@@ -1,4 +1,4 @@
-# Exercise 11 - Using socket.io
+# Exercise 10 - Using socket.io
 
 ### Socket.io
 
