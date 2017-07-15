@@ -1,4 +1,4 @@
-# Exercise 13 - Creating a simple chat server with socket.io
+# Exercise 11 - Creating a simple chat server with socket.io
 
 ### Reference
 - https://socket.io/get-started/chat/
