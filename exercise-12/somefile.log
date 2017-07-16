@@ -1,0 +1,54 @@
+{"level":"info","message":"Listening to port 3000","timestamp":"2017-07-16T09:35:34.787Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:35:39.780Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:35:44.782Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:35:49.787Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:35:54.792Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:35:59.797Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:04.798Z"}
+{"level":"info","message":"This is an 'info' log","timestamp":"2017-07-16T09:36:06.327Z"}
+{"level":"error","message":"This is an 'error' log","timestamp":"2017-07-16T09:36:06.327Z"}
+{"level":"info","message":"This is an 'info' log","timestamp":"2017-07-16T09:36:08.411Z"}
+{"level":"error","message":"This is an 'error' log","timestamp":"2017-07-16T09:36:08.411Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:09.799Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:14.804Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:19.804Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:24.809Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:29.810Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:34.811Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:39.812Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:44.813Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:49.818Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:54.820Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:36:59.820Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:04.821Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:09.824Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:14.831Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:19.834Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:24.836Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:29.842Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:34.846Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:39.849Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:44.854Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:49.860Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:54.861Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:37:59.862Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:38:04.864Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:38:09.865Z"}
+{"level":"info","message":"Listening to port 3000","timestamp":"2017-07-16T09:42:04.367Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:09.356Z"}
+{"level":"info","message":"This is an 'info' log","timestamp":"2017-07-16T09:42:09.768Z"}
+{"level":"error","message":"This is an 'error' log","timestamp":"2017-07-16T09:42:09.769Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:14.361Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:19.363Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:24.369Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:29.374Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:34.374Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:39.376Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:44.378Z"}
+{"level":"info","message":"Listening to port 3000","timestamp":"2017-07-16T09:42:47.255Z"}
+{"level":"info","message":"This is an 'info' log","timestamp":"2017-07-16T09:42:50.491Z"}
+{"level":"error","message":"This is an 'error' log","timestamp":"2017-07-16T09:42:50.491Z"}
+{"level":"info","message":"This is an 'info' log","timestamp":"2017-07-16T09:42:50.946Z"}
+{"level":"error","message":"This is an 'error' log","timestamp":"2017-07-16T09:42:50.947Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:52.249Z"}
+{"level":"info","message":"Logging every 5 seconds","timestamp":"2017-07-16T09:42:57.255Z"}

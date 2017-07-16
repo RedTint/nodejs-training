@@ -7,12 +7,16 @@ const express = require('express');
 // tranport - methods of logging (e.g: console logs, file logs, 3rd-party API logs, etc.)
 const tranports = [
     // display logs in console
-    new (winston.transports.Console)(),
+    new winston.transports.Console({
+        level: 'debug',
+        handleExceptions: true,
+        colorize: true
+    }),
     // store logs in { filename: /path/to/file }
-    new (winston.transports.File)({ filename: 'somefile.log' })
+    new winston.transports.File({ filename: 'somefile.log' })
 ];
 // instantiating winston logger
-var logger = new (winston.Logger)({
+var logger = new winston.Logger({
     transports: tranports
 });
 
