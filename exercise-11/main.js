@@ -31,8 +31,22 @@ io.on('connection', client => {
         console.log('send message called');
         // get nickname
         const who = clients[client.id];
-        // send chat update to users
-        io.sockets.emit('chat', { who, message });
+        
+        if (!message.sendTo) {
+            // send chat update to users
+            io.sockets.emit('chat', { 
+                who: who, 
+                message: message.message 
+            });
+        } else {
+            // send chat to specific socketId / user
+            client.broadcast
+                .to(message.sendTo)
+                .emit('chat', { 
+                    who: who, 
+                    message: message.message 
+                });
+        }
     });
 
     client.on('exit chat', () => {

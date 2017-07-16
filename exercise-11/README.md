@@ -54,9 +54,8 @@ socket.broadcast.to(socketid).emit('message', 'for your eyes only');
 - Demo that you can receive messages using the chat server
 
 ### Challenges
-- [ ] Send chat to specific person/client only (private messaging)
+- [x] Send chat to specific person/client only (private messaging)
 - [x] Add nickname
 - [x] Broadcast newly connected user
-- [ ] Add user is typing functionality
-- [ ] Show online users
+- [x] Show online users
 - [x] Display 'You' if you are the sender

@@ -81,3 +81,7 @@ h3 {
 #messages div {
     margin-bottom: 8px;
 }
+
+#member-list a {
+    display: block;
+}
