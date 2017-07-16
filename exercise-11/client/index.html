@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Socket.io Client</title>
+        <link rel="stylesheet" href="/client/styles.css" />
+    </head>
+    <body>
+        <script src="/client/socket.io.js"></script>
+        <script src="/client/jquery.min.js"></script>
+        <script src="/client/client.js"></script>
+        <h1>My Chatroom</h1>
+        <div id="join-chat">
+            <input type="text" id="username">
+            <button id="join-chat-btn">Join Chat</button>
+        </div>
+        <div id="wrapper">
+            <div id="left">
+                <div id="rooms">
+                    <h3>Rooms</h2>
+                    <div id="room-list">
+                    </div>
+                </div>
+                <div id="members">
+                    <h3>Members</h2>
+                    <div id="member-list">
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="input">
+                    <input type="text" id="message" />
+                    <button id="message-input-btn">Send</button>
+                </div>
+                <div id="messages"></div>
+            </div>
+        </div>
+    </body>
+</html>
