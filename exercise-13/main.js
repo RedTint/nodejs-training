@@ -1,11 +1,12 @@
 // load libraries
 const ngrok = require('ngrok'); // to allow public access while testing
-const app = require('express')();
+const express = require('express');
+const app = express();
 const http = require('http');
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
-
 const server = http.Server(app);
+const io = require('socket.io')(server);
 
 // load configs
 const port = process.env.PORT || 80;
@@ -32,6 +33,23 @@ bot.on(MessengerPlatform.Events.MESSAGE, function(userId, message) {
 });
 // ************ BOT ENDS HERE ***************** //
 
+// ************ SOCKET STARTS HERE ***************** //
+let clients = {};
+
+io.on('connection', client => {
+
+    console.log(`client connected: ${client.id}`);
+
+    // message = { userId, text }
+    client.on('send message', payload => {
+        const userId = payload.userId;
+        const message = payload.message;
+        bot.sendTextMessage(userId, message);
+    });
+
+});
+// ************ SOCKET END HERE ******************** //
+
 // send message to user from API
 app.post('/send', jsonParser, (req, res) => {
     console.log(req.body);
@@ -43,6 +61,12 @@ app.post('/send', jsonParser, (req, res) => {
     res.sendStatus(200);
 });
 
+// host client
+app.use('/client', express.static(`${__dirname}/client`))
+app.get('/', (req, res) => {
+    res.sendFile(`${__dirname}/client/index.html`);
+});
+
 // make your localhost public
 ngrok.connect((err, url) => {
     if (err) {
@@ -51,10 +75,6 @@ ngrok.connect((err, url) => {
     }
     // Display publicly accessible API
     console.log(`Public URL: ${url}`);
-});
-
-app.get('/', (req, res) => {
-    res.send('Hello world');
 });
 
 // listen to port

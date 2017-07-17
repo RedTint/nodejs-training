@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Socket.io Client</title>
+        <link rel="stylesheet" href="/client/styles.css" />
+    </head>
+    <body>
+        <script src="/client/socket.io.js"></script>
+        <script src="/client/jquery.min.js"></script>
+        <script src="/client/client.js"></script>
+        <h1>My Facebook Agent</h1>
+        
+        <div id="messenger">
+            <div>
+                <input type="text" placeholder="Enter message here..." id="message" />
+                <button id="send-message-btn">Send Message</button>
+            </div>
+            <div id="messages"></div>
+        </div>
+
+        <script type="text/javascript">
+            let client = io('http://localhost');
+
+            client.on('connect', () => {
+                console.log('connected');
+            });
+
+            client.on('disconnect', () => {
+                console.log('disconnect');
+            });
+        </script>
+
+        <script type="text/javascript">
+            $('#send-message-btn').on('click', function() {
+                const message = $('#message').val();
+                client.emit('send message', {
+                    userId: '1859482384078684',
+                    message: message
+                });
+            });
+        </script>
+    </body>
+</html>

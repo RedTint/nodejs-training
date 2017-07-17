@@ -13,6 +13,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "facebook-bot-messenger": "^1.0.5",
-    "ngrok": "^2.2.14"
+    "ngrok": "^2.2.14",
+    "socket.io": "^2.0.3"
   }
 }
