@@ -1,0 +1,19 @@
+{
+  "name": "exercise-14",
+  "version": "1.0.0",
+  "description": "### Tech Story - Create a login page that returns a JWT token - Create a JWT Secured endpoint",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1"
+  }
+}
