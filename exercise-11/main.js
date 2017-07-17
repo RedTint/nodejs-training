@@ -33,7 +33,7 @@ io.on('connection', client => {
         const who = clients[client.id];
         
         if (!message.sendTo) {
-            // send chat update to users
+            // send chat update to users except sender
             io.sockets.emit('chat', { 
                 who: who, 
                 message: message.message 
